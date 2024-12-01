@@ -1,0 +1,10 @@
+{
+    "deploy": [
+        "../deploy.md"
+    ],
+    "docs": "",
+    "features": [],
+    "mcu": "nrf52",
+    "thumbnail": "",
+    "vendor": "Qorvo"
+}
