@@ -28,15 +28,16 @@
 #define MICROPY_HW_MCU_NAME         "NRF52832"
 #define MICROPY_PY_SYS_PLATFORM     "DWM1001"
 
-#define MICROPY_PY_MACHINE_SOFT_PWM (1)
-#define MICROPY_PY_MUSIC            (1)
+// #define MICROPY_PY_MACHINE_SOFT_PWM (1)
+// #define MICROPY_PY_MUSIC            (1)
 
 #define MICROPY_PY_MACHINE_UART     (1)
-#define MICROPY_PY_MACHINE_HW_PWM   (1)
+#define MICROPY_PY_MACHINE_SPI      (1)
+// #define MICROPY_PY_MACHINE_HW_PWM   (1)
 #define MICROPY_PY_MACHINE_RTCOUNTER (1)
 #define MICROPY_PY_MACHINE_I2C      (1)
-#define MICROPY_PY_MACHINE_ADC      (1)
-#define MICROPY_PY_MACHINE_TEMP     (1)
+// #define MICROPY_PY_MACHINE_ADC      (1)
+// #define MICROPY_PY_MACHINE_TEMP     (1)
 
 #define MICROPY_HW_ENABLE_RNG       (1)
 
@@ -46,9 +47,9 @@
 
 #define MICROPY_HW_LED1             (30) // LED1
 #define MICROPY_HW_LED1_PULLUP      (0)
-#define MICROPY_HW_LED2             (20) // LED2
-#define MICROPY_HW_LED3             (19) // LED3
-#define MICROPY_HW_LED4             (18) // LED4
+#define MICROPY_HW_LED2             (31) // LED2
+#define MICROPY_HW_LED3             (22) // LED3
+#define MICROPY_HW_LED4             (14) // LED4
 
 // UART config
 #define MICROPY_HW_UART1_RX         (11)
@@ -58,16 +59,28 @@
 // #define MICROPY_HW_UART1_HWFC       (1)
 
 // SPI0 config
-#define MICROPY_HW_SPI0_NAME        "SPI0"
-#define MICROPY_HW_SPI0_SCK         (23) //
-#define MICROPY_HW_SPI0_MOSI        (24) //
-#define MICROPY_HW_SPI0_MISO        (25) //
+// #define MICROPY_HW_SPI0_NAME        "SPI0"
+// #define MICROPY_HW_SPI0_SCK         (23) //
+// #define MICROPY_HW_SPI0_MOSI        (24) //
+// #define MICROPY_HW_SPI0_MISO        (25) //
 
-#define MICROPY_HW_PWM0_NAME        "PWM0"
-#define MICROPY_HW_PWM1_NAME        "PWM1"
-#define MICROPY_HW_PWM2_NAME        "PWM2"
+// SPI0 config
+#define MICROPY_HW_SPI0_NAME        "SPI0"
+#define MICROPY_HW_SPI0_CSN         (17) //
+#define MICROPY_HW_SPI0_SCK         (16) //
+#define MICROPY_HW_SPI0_MISO        (18) //
+#define MICROPY_HW_SPI0_MOSI        (20) //
+#define MICROPY_HW_SPI0_IRQ         (19) //
+
+// I2C
+#define MICROPY_HW_I2C1_SCL         (28)
+#define MICROPY_HW_I2C1_SDA         (29)
+
+// #define MICROPY_HW_PWM0_NAME        "PWM0"
+// #define MICROPY_HW_PWM1_NAME        "PWM1"
+// #define MICROPY_HW_PWM2_NAME        "PWM2"
 
 // buzzer pin
-#define MICROPY_HW_MUSIC_PIN        (14)
+// #define MICROPY_HW_MUSIC_PIN        (14)
 
 #define HELP_TEXT_BOARD_LED         "1,2,3,4"

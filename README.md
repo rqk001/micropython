@@ -3,10 +3,10 @@ Building and deploying DWM1001-MDEK version
 
 1. Install JLink tools
 
-...
+```
   sh> wget https://www.segger.com/downloads/jlink/JLink_Linux_x86_64.deb
   sh> sudo dpkg -i ./JLink_Linux_x86_64.deb
-...
+```
 
   If anything goes wrong, please refer to https://www.segger.com/downloads/jlink
 
